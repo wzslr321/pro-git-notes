@@ -1,14 +1,36 @@
 <h1 align="center"> Git notes based on book: "Pro Git" by Scott Chacon</h1>
 
+<p align = "center">
+  <i>
+     This repository contains my personal notes about git that I wrote  while reading a 
+     "Pro Git" book. I try to summarize the most important things and organize them properly
+     to make it easily accessible whenever needed!
+  </i>
+</p>
+
 ---
 
 <h3> List of content:</h3>
 
 * Basics
+* Branching
 
 ---
 
-<h4> Basics </h4>
+<p align="center">
+  Found it useful? Want more updates?
+</p>
+
+<p align = "center">
+  <b> <i> Show your support by giving a :star:  </i> </b>
+</p>
+
+---
+
+<h2 align="center"> Basics </h2>
+
+# 
+
 Two approaches of initializing repository are: 
 
 1. Take an existing project or directory and imports it into Git.
@@ -115,3 +137,15 @@ There are two main types of tags - lightweight and annotated.
   * Annotated tags are stored as full objects in git database
     * Those can be created with `git tag -a <name> -m <message>`
   * To tag already existing commit use `git tag -a <tag name> <commit id>`  
+
+<h4> Personalize commands with aliases </h4>
+
+It is possible to make your own names for specific commands.
+
+* `git config --global alias.<name> <command>` sets an alias for specific command
+    * Remember that command doesn't include "git" in front of it.
+    * Example: `git config --global alias.comm commit` replaces 'git commit' command with 'git comm'
+
+<h2 align="center"> Branching </h2>
+
+#
