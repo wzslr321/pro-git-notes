@@ -158,10 +158,7 @@ It is possible to make your own names for specific commands.
 
 <h2 align="center"> Branching </h2>
 
-<<<<<<< HEAD
 <br/>
-=======
-#
 
 Branches are very important part of git workflow. It is the core part of working in a group!
 
@@ -214,4 +211,3 @@ There is a graphical tool that helps to resolve these issues, it can be configur
 `git mergetool --tool-help` - to print list of available tools, e.g., `git mergetool --tool=nvimdiff`
 
 Next time with tool configured, it will only be needed to run `git mergetool`.
->>>>>>> b439119 (branch basics)
