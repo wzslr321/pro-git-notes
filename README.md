@@ -10,10 +10,14 @@
 
 ---
 
+<br/>
+
 <h3> List of content:</h3>
 
 * Basics
 * Branching
+
+<br/>
 
 ---
 
@@ -27,9 +31,13 @@
 
 ---
 
+<br/>
+
 <h2 align="center"> Basics </h2>
 
-# 
+
+<br/>
+<br/>
 
 Two approaches of initializing repository are: 
 
@@ -145,7 +153,9 @@ It is possible to make your own names for specific commands.
 * `git config --global alias.<name> <command>` sets an alias for specific command
     * Remember that command doesn't include "git" in front of it.
     * Example: `git config --global alias.comm commit` replaces 'git commit' command with 'git comm'
+    
+<br/>
 
 <h2 align="center"> Branching </h2>
 
-#
+<br/>
