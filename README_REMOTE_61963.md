@@ -10,14 +10,10 @@
 
 ---
 
-<br/>
-
 <h3> List of content:</h3>
 
 * Basics
 * Branching
-
-<br/>
 
 ---
 
@@ -31,13 +27,9 @@
 
 ---
 
-<br/>
-
 <h2 align="center"> Basics </h2>
 
-
-<br/>
-<br/>
+# 
 
 Two approaches of initializing repository are: 
 
@@ -153,14 +145,9 @@ It is possible to make your own names for specific commands.
 * `git config --global alias.<name> <command>` sets an alias for specific command
     * Remember that command doesn't include "git" in front of it.
     * Example: `git config --global alias.comm commit` replaces 'git commit' command with 'git comm'
-    
-<br/>
 
 <h2 align="center"> Branching </h2>
 
-<<<<<<< HEAD
-<br/>
-=======
 #
 
 Branches are very important part of git workflow. It is the core part of working in a group!
@@ -214,4 +201,3 @@ There is a graphical tool that helps to resolve these issues, it can be configur
 `git mergetool --tool-help` - to print list of available tools, e.g., `git mergetool --tool=nvimdiff`
 
 Next time with tool configured, it will only be needed to run `git mergetool`.
->>>>>>> b439119 (branch basics)

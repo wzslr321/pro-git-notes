@@ -1,4 +1,4 @@
-<h1 align="center"> Git notes based on book: "Pro Git" by Scott Chacon and Ben Straub</h1>
+<h1 align="center"> Git notes based on book: "Pro Git" by Scott Chacon</h1>
 
 <p align = "center">
   <i>
@@ -10,14 +10,10 @@
 
 ---
 
-<br/>
-
 <h3> List of content:</h3>
 
 * Basics
 * Branching
-
-<br/>
 
 ---
 
@@ -31,13 +27,9 @@
 
 ---
 
-<br/>
-
 <h2 align="center"> Basics </h2>
 
-
-<br/>
-<br/>
+# 
 
 Two approaches of initializing repository are: 
 
@@ -153,65 +145,7 @@ It is possible to make your own names for specific commands.
 * `git config --global alias.<name> <command>` sets an alias for specific command
     * Remember that command doesn't include "git" in front of it.
     * Example: `git config --global alias.comm commit` replaces 'git commit' command with 'git comm'
-    
-<br/>
 
 <h2 align="center"> Branching </h2>
 
-<<<<<<< HEAD
-<br/>
-=======
 #
-
-Branches are very important part of git workflow. It is the core part of working in a group!
-
-Example situation:
-
-* Peter have to work on a new feature to a website, e.g., new subpage.
-* Peter creates a new branch for this feature, called 'register-page'
-* Peter creates a bunch of commits, but he didn't finish his work yet.
-* He receives a call, that something on production needs hotfix immediately
-* Peter switches to production branch, and creates a new branch called, e.g., 'firefox hotfix'
-* After it's tested, 'firefox hotfix' is merged and pushed to production
-* With hotfix work done, Peter simply switches to 'register-page' branch and continues his work.
-
-Git init by default creates `master` branch of the repository, it is not a special branch though. 
-Nowadays, it is recommended to change its name to `main`. It can be done with specifying it before initial commit with
-`git branch -M main` and then push first commit to this branch with `git push origin main
-
-`git branch <name>` mentioned before, creates a new branch.
-`git checkout <name>` switches to an existing branch
-
-* Remember, that switching branches, changes files in your working directory, so your changes have to be stashed or committed.
-
-After having work done and all tests passed, you can merge your branch with `git merge <branchname>`, but usually it is better to create a pull-request, which will be covered later.
-If branch merged correctly, it is safe to delete it with `git branch -d <branchname` since it will no longer be used.
-
-Sometimes, it is impossible to merge successfully, because of conflicts. It happens when changes made in two branches 
-affects the same part of file differently.
-
-Conflict looks similar to this: (Example straight from the book.)
-```bash
-<<<<<<< HEAD: style.css
-h2 { align="center" } 
-=======
-h2 {
-    align="center"
-}
->>>>>>> hotfix: style.css
-
-```
-
-To resolve this conflict it is required to choose one side or the other or merge the contents yourself.
-e.g., replace the entire block :
-```bash
-h2 {
-    align="center"
-}
-```
-
-There is a graphical tool that helps to resolve these issues, it can be configured with command: 
-`git mergetool --tool-help` - to print list of available tools, e.g., `git mergetool --tool=nvimdiff`
-
-Next time with tool configured, it will only be needed to run `git mergetool`.
->>>>>>> b439119 (branch basics)
